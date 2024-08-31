@@ -8,9 +8,12 @@ PKG_NAME:=sing-box
 PKG_VERSION:=1.9.4
 PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://codeload.github.com/SagerNet/sing-box/tar.gz/v$(PKG_VERSION)?
-PKG_HASH:=30652ce0151ef46f314b25df74b402278dd7c540ba0b7f1c2c66209314afad09
+PKG_SOURCE_PROTO:=git
+PKG_SOURCE_URL:=https://github.com/PuerNya/sing-box.git
+PKG_SOURCE_VERSION:=building
+PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
+PKG_SOURCE:=$(PKG_SOURCE_SUBDIR).tar.gz
+PKG_HASH:=skip
 
 PKG_LICENSE:=GPL-3.0-or-later
 PKG_LICENSE_FILES:=LICENSE
